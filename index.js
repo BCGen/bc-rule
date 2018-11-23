@@ -7,7 +7,6 @@ const shell = require("shelljs");
 
 program
   .version("0.1.0")
-  .command('init')
   .action(() => {
     console.log("初始化package.json...");
     shell.exec(`npm init -y`);

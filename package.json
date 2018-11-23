@@ -13,12 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^2.19.0",
     "download-git-repo": "^1.1.0",
     "edit-json-file": "^1.2.0",
     "shelljs": "^0.8.3"
   },
   "devDependencies": {
-    "@types/node": "^10.12.10",
-    "commander": "^2.19.0"
+    "@types/node": "^10.12.10"
   }
 }
