@@ -20,7 +20,7 @@ program
     console.log("複製完成。");
     console.log("編輯package.json...");
     writePackageJson();
-    console.log("感謝您的耐心等待");
+    console.log("設定完成，感謝您的耐心等待");
     console.log("請重新啓動vscode後，安裝右下方推薦的套件完成設定。");
   })
   .parse(process.argv);
