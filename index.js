@@ -19,6 +19,7 @@ program
     shell.cp("-Rf", "./node_modules/bc-rule/vscode/.editorconfig", "./");
     console.log("複製完成。");
     console.log("編輯package.json...");
+    writePackageJson();
     console.log("感謝您的耐心等待");
     console.log("請重新啓動vscode完成設定。");
   })
