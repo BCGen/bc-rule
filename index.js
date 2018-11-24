@@ -25,6 +25,10 @@ program
     shell.cp("-Rf", "./node_modules/bc-rule/.editorconfig", "./");
     console.log("複製完成。");
 
+    console.log("複製tsconfig.json至工作區...");
+    shell.cp("-Rf", "./node_modules/bc-rule/tsconfig.json", "./");
+    console.log("複製完成。");
+
     console.log("編輯package.json...");
     writePackageJson();
     console.log("package.json編輯完成。");
