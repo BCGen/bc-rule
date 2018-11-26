@@ -8,7 +8,6 @@ const shell = require("shelljs");
 program
   .version("0.1.0")
   .action(() => {
-
     console.log("初始化package.json...");
     shell.exec(`npm init -y`);
     console.log("package.json初始化完成。");
@@ -45,11 +44,11 @@ function writePackageJson() {
 
   console.log(`設定eslingConfig路徑...`);
   file.set("eslintConfig", {
-    extends: "bc"
+    extends: ["bc", "./.vscode/eslint/.eslintrc.yml"]
   });
 
   console.log(`設定stylelint路徑...`);
   file.set("stylelint", {
-    extends: "stylelint-config-bc"
+    extends: ["stylelint-config-bc", "./.vscode/stylelint/.stylelintrc.yml"]
   });
 }
