@@ -108,12 +108,12 @@ function writePackageJson() {
 
   console.log(`設定 eslintConfig 路徑...`);
   file.set("eslintConfig", {
-    extends: ["bc", "./.vscode/eslint/.eslintrc.yml"]
+    extends: ["./.vscode/eslint/.eslintrc.yml"]
   });
 
   console.log(`設定 stylelint 路徑...`);
   file.set("stylelint", {
-    extends: ["stylelint-config-bc", "./.vscode/stylelint/.stylelintrc.yml"]
+    extends: ["./.vscode/stylelint/.stylelintrc.yml"]
   });
 }
 
