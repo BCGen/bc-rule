@@ -81,7 +81,7 @@ function laravelSetting() {
   console.log("開始 laravel 設定");
   console.log("安裝 barryvdh/laravel-ide-helper...");
   shell.exec("composer require --dev barryvdh/laravel-ide-helper");
-  console.log("barryvdhlaravel-ide-helper 安裝成功。");
+  console.log("barryvdh/laravel-ide-helper 安裝成功。");
   console.log("");
 
   console.log("安裝 doctrine/dbal...");
