@@ -89,6 +89,11 @@ function laravelSetting() {
   console.log("doctrine/dbal 安裝成功。");
   console.log("");
 
+  console.log("安裝 barryvdh/laravel-debugbar...");
+  shell.exec("composer require --dev barryvdh/laravel-debugbar");
+  console.log("barryvdh/laravel-debugbar 安裝成功。");
+  console.log("");
+
   console.log("安裝 nunomaduro/larastan...");
   shell.exec("composer require --dev nunomaduro/larastan");
   console.log("nunomaduro/larastan 安裝成功。");
