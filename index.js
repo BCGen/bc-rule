@@ -113,7 +113,11 @@ function writePackageJson() {
   });
 
   console.log(`設定devDependencies`);
-  file.set("devDependencies.bc-rule", "github:BCGen/bc-rule");
+  file.set("devDependencies.eslint-config-bc", "github:BCGen/eslint-config-bc");
+  file.set(
+    "devDependencies.stylelint-config-bc",
+    "github:BCGen/stylelint-config-bc"
+  );
 
   console.log(`設定 eslintConfig 路徑...`);
   file.set("eslintConfig", {
