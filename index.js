@@ -74,6 +74,12 @@ function javaScriptSetting() {
   console.log("複製完成。");
   console.log("");
 
+  console.log("檢查工作區是否有 .gitignore");
+  if (!shell.test("./.gitignore")) {
+    console.log("複製.gitignore至工作區...");
+    shell.cp("-Rf", "./node_modules/bc-rule/.gitignore.", "./");
+  }
+
   console.log("javaScript 設定完成。");
   console.log("");
 }
