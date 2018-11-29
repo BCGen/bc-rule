@@ -50,8 +50,12 @@ function javaScriptSetting() {
   console.log("package.json初始化完成。");
   console.log("");
 
+  console.log("編輯package.json...");
+  writePackageJson();
+  console.log("package.json編輯完成。");
+
   console.log("安裝相關套件...");
-  shell.exec(`npm i -D ${REPO_NAME}`);
+  shell.exec(`npm install`);
   console.log("套件安裝完成。");
   console.log("");
 
@@ -70,9 +74,6 @@ function javaScriptSetting() {
   console.log("複製完成。");
   console.log("");
 
-  console.log("編輯package.json...");
-  writePackageJson();
-  console.log("package.json編輯完成。");
   console.log("javaScript 設定完成。");
   console.log("");
 }
@@ -110,6 +111,9 @@ function writePackageJson() {
   let file = editJsonFile("package.json", {
     autosave: true
   });
+
+  console.log(`設定devDependencies`);
+  file.set("devDependencies.bc-rule", "github:BCGen/bc-rule");
 
   console.log(`設定 eslintConfig 路徑...`);
   file.set("eslintConfig", {
