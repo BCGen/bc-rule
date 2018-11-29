@@ -45,12 +45,12 @@ function makeRed(txt) {
 }
 
 function javaScriptSetting() {
-  console.log("初始化package.json...");
+  console.log("初始化 package.json...");
   shell.exec(`npm init -y`);
   console.log("package.json初始化完成。");
   console.log("");
 
-  console.log("編輯package.json...");
+  console.log("編輯 package.json...");
   writePackageJson();
   console.log("package.json編輯完成。");
 
