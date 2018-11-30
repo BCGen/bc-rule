@@ -1,0 +1,18 @@
+# 欲修改規則
+# 請將設定檔內 # - ./.stylelintrc.json 注釋取消
+# 將同資料夾下的 .stylelintrc.json-example
+# 重新命名為 .stylelintrc.json
+# 編輯 .stylelintrc.json
+
+# 規則請參考以下網站
+# stylelint config standard
+# https://github.com/stylelint/stylelint-config-standard
+
+# ==================== #
+#    以下為默認設定檔    #
+#    （編輯說明如上）    #
+# =================== #
+
+extends:
+  - stylelint-config-bc
+  # - ./.stylelintrc.json

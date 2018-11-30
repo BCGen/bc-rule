@@ -1,0 +1,36 @@
+{
+  // Text Editor
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  // Eslint
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [{
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+
+  // Prettire
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+
+  // Stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // Vetur
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.styleInitialIndent": true
+}

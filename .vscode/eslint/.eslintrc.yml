@@ -1,0 +1,29 @@
+# 欲修改規則
+# 請將設定檔內 # - ./.eslintrc.json 注釋取消
+# 將同資料夾下的 .eslintrc.json-example
+# 重新命名為 .eslintrc.json
+# 編輯 .eslintrc.json 設定規則
+
+# 規則請參考以下網站
+# eslint:recommended https://eslint.org/docs/rules/
+# eslint standard https://standardjs.com/rules-zhtw.html
+# eslint-plugin-import https://github.com/benmosher/eslint-plugin-import
+# eslint-plugin-vue https://github.com/benmosher/eslint-plugin-import
+
+# ==================== #
+#    以下為默認設定檔    #
+#    （編輯說明如上）    #
+# =================== #
+
+extends:
+  - bc
+  # - ./.eslintrc.json
+
+rules:
+  no-unused-vars: 'warn'
+  no-console: 'warn'
+
+globals:
+  axios: false
+  Vue: false
+  Swiper: false
