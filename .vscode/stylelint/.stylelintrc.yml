@@ -16,3 +16,6 @@
 extends:
   - stylelint-config-bc
   # - ./.stylelintrc.json
+
+rules:
+  no-descending-specificity: null
