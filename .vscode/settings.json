@@ -31,6 +31,7 @@
   "scss.validate": false,
 
   // Vetur
+  "vetur.format.defaultFormatter.html": "none",
   "vetur.format.defaultFormatter.js": "none",
   "vetur.format.styleInitialIndent": true
 }
