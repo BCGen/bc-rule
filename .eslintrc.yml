@@ -1,0 +1,9 @@
+extends:
+  - ruker
+
+globals:
+  _: false
+  $: false
+  Vue: false
+  axios: false
+  Swiper: false
